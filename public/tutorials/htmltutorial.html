@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <title>Passion Fruits Web</title>
+    <link rel="icon" href="../assets/PassionFruitsWeb.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .links {
+            text-align: center;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+<body>
+    <div class="topmenu">
+        <div class="logo"><img src="../assets/logo.png"></div>
+        <div style="width: calc(40% - 60px); text-align: left;">The Passion Fruits</div>
+        <a href="../index.html">
+            <div>Home</div>
+        </a>
+        <a href="../products.html">
+            <div>Products</div>
+        </a>
+        <a href="../accounts.html">
+            <div>Log In/Sign Up</div>
+        </a>
+    </div>
+    <div class="main">
+        <h2>The</h2>
+        <h1>World's Most Comprehensive HTML Tutorial Ever</h1>
+        <h2>2000</h2>
+        <br><br>
+        <div style="text-align: left;">
+            <p>In this ever-increasingly online-dominant world, a great skill to have in your arsenal is website development. Why learn?</p>
+            <dl>
+                <dd>- To advertise your company and sell products</dd>
+                <dd>- To create stories, games, and articles</dd>
+                <dd>- To expand your community</dd>
+                <dd>- To share your creations with the world</dd>
+            </dl>
+            <p>If you're looking to learn that skill, you've come to the right place. We don't have time to waste, let's get started!</p>
+            <h2>Steps</h2>
+            <a href="#setup" class="links" style="text-align: left;"><p>1 - Setup</p></a>
+            <a href="#beginning" class="links" style="text-align: left;"><p>2 - Beginning to Code</p></a>
+            <h2 id="setup">Step 1: Setup</h2>
+            <p>
+                Websites are mainly coded in the languages HTML & CSS. Let's start by downloading Visual Studio Code. VS Code is a program that runs code. VS Code supports all programming languages, but right now, we only need HTML & CSS (which should be available by default). Although VS Code doesn't let us preview the output for the code, we can install some extensions that allow us to do so. Also, VS Code is one of the most powerful, versatile, and used programming environments out there, so installing it now is very handy.
+            </p>
+            <a class="links" href="https://code.visualstudio.com/download"><p>https://code.visualstudio.com/download</p></a>
+            <p>
+                Head over to this link and hit the download button for the operating system you're using (Windows, Linux, or Mac.) If you're not sure what OS (Operating system) you are using, go ahead and hit the windows button. After that, wait until it finishes downloading and go ahead and open it up!<br><br>
+                Next up, let's download those extensions that allow us to preview HTML. Open up VS Code and navigate to the Extensions button on the left (it looks like 4 squares with one flying away). In the search bar, type "html preview" and install the one by George Oliveira by pressing the small blue button. You may have to restart.
+            </p>
+            <img src="images/extension.png">
+            <p>
+                Before we begin, let's create a folder to house this HTML. This is optional, and you could create more than one folder. But if you choose to do so, create the folder (name it whatever you want,) and return to VS Code. Click on the "File" button on the top left corner and select "Open Folder". Navigate to the folder you just created and hit select. Press the Explorer button on the left (two pieces of paper) and you should be greeted with this:
+            </p>
+            <img src="images/folder.png" style="width: 40%;">
+            <p>
+                My folder says “MY HTML,” but your folder should be called whatever you named it.<br><br>
+                So, now that you have a folder, you'll want to create a file in the folder. Hover over your folder and you should see 4 options. Select the one that says "New File". Name it whatever you want, but end the name with the extension ".html". For example, I have named mine "My First Website.html" but you can name yours anything as long as it ends with .html.
+            </p>
+            <img src="images/myfirstwebsite.png" style="width: 40%;">
+            <p>
+                (If you plan to host your website in the future, make sure the main page is called "index.html", however you don't need to do that for now.)<br><br>
+                Click on the file and you should see a blank document with the first line labeled '1'. On the top right, you should see a button with a magnifying glass. Click that to activate the preview. It should adjust in real-time but remember to always save using Ctrl + S. Double-click the file in your file manager to view it in your real browser if you want to view it in its actual form.<br><br> Alright, the setup's ready, let's put some lines in the program!
+            </p>
+            <h2 id="beginning">Step 2: Beginning to Code</h2>
+            <p>
+                Always start your websites with a DOCTYPE declaration. Basically, type <code class='code'>&lt;!DOCTYPE html&gt;</code>. Capitalization doesn't matter, but keep the angled brackets and the exclamation mark. This tells the browser that it's dealing with real HTML.
+                <br><br>
+                Next, we need some space to put our code in. Type <code class="code">&lt;html&gt;</code> in a new line to begin. VS Code may automatically add <code class="code">&lt;/html&gt;</code> after <code class="code">&lt;html&gt;</code>. This is a very important rule: If a tag (<code class="code">&lt;&gt;</code>) contains information after it, it should be capped at the end with an ending tag (<code class="code">&lt;/&gt;</code>). Put some enters between the two <code class="code">&lt;html&gt;</code> tags to give yourself space. Two tags together are called an element, which are the basic building blocks of HTML!
+                <br><br>
+                (Here's a handy dandy tip: VS Code automatically adds ending tags to any tags you type in!)
+                <br><br>
+                Now, the website can be divided further into a <code class="code">&lt;head&gt;</code> and a <code class="code">&lt;body&gt;</code>. Everything inside the <code class="code">&lt;head&gt;</code> is behind the scenes; people on your website can't see it. But everything you want people to see should be in the <code class="code">&lt;body&gt;</code>. Let's see if you can do this yourself: place a <code class="code">&lt;head&gt;</code> element and a <code class="code">&lt;body&gt;</code> element below that, inbetween the two <code class="code">&lt;html&gt;</code> tags. They should be separate elements, but both inside the <code class="code">&lt;html&gt;</code> tags. Remember to use ending tags too!
+                <br><br>
+                Did you do it? If you didn't, this is what you should have done:
+
+<pre class="code">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+            </p>
+            <br><br><br>
+        </div>
+        <p class="subtext">You've finished! Please provide feedback on this site. Is the font too small? Is it too plain? Is it hard to see what's going on? Thanks!</p>
+    </div>
+</body>

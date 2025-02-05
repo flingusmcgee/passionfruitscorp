@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Passion Fruits Web</title>
+    <link rel="icon" href="assets/PassionFruitsWeb.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .main {
+            position: relative;
+            animation: fly-in-main 0.8s;
+        }
+        .span {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            height: 30px;
+            background-color: white;
+        }
+        .links {
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .links:hover {
+            color:black;
+            text-decoration: none;
+            transition-duration: 0.5s;
+        }
+    </style>
+    <script>
+        function highlighter(id, numba) {
+            for (let i = 0; i < numba; i++) {
+                setTimeout(function go() {
+                    document.getElementById(id).style.width = i + 'px';
+                }, 0.4 * i)
+            }
+        }
+        function delighter(id, numba) {
+            for (let j = 0; j <= numba; j++) {
+                setTimeout(function og() {
+                    console.log(j);
+                    document.getElementById(id).style.width = numba - j + 'px';
+                }, 0.4 * j)
+            }
+        }
+    </script>
+</head>
+<body>  
+    <div class="topmenu">
+        <div class="logo"><img src="assets/logo.png"></div>
+        <div style="width: calc(40% - 60px); text-align: left;">The Passion Fruits</div>
+        <a href="index.html">
+            <div>Home</div>
+        </a>
+        <a href="products.html">
+            <div>Products</div>
+        </a>
+        <a href="accounts.html">
+            <div>Log In/Sign Up</div>
+        </a>
+    </div>
+    <div class="main" style="height: 300px;">
+        <h1>Our Products</h1>
+        <br>
+            <a href="https://passionfruits.neocities.org" target="_blank">
+                <span class="links" style="top: 150px" onmouseover="highlighter('a', 400)" onmouseleave="opening=false; delighter('a', 400)">Bing Bong - For all your gaming needs</p>
+            </a>
+                <span id="a" class="span" style="width: 0px; top: 130px;"></span>
+        <br>
+            <a href="https://laughoutloincloth.web.app" target="_blank">
+                <span class="links" style="top: 200px" onmouseover="highlighter('b', 510)" onmouseleave="delighter('b', 510)">Laught Out Loincloth! - Name a joke, we've got it!</p>
+            </a>
+                <span id="b" class="span" style="width: 0px; top: 180px"></span>
+        <br>
+            <a href="tutorials/htmltutorial.html">
+                <span class="links" style="top: 250px" onmouseover="highlighter('c', 500)" onmouseleave="delighter('c', 510)">The World's Best Programming Tutorials - The definitive answer to programming</p>
+            </a>
+                <span id="c" class="span" style="width: 0px; top: 230px; height: 50px;"></span>
+    </div>
+</body>
