@@ -50,7 +50,7 @@ pre.code {
 .topmenu > .logo {
     width: 60px;
 }
-.logo > img {
+.logo > div > img {
     height: 40px;
     width: auto;
     position: absolute;
